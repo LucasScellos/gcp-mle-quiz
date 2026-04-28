@@ -15,9 +15,10 @@ import pdfplumber
 from pathlib import Path
 
 # Load .env file if present
+env_path = Path(__file__).parent / ".env"
 try:
     from dotenv import load_dotenv
-    load_dotenv(Path(__file__).parent / ".env")
+    load_dotenv(env_path)
 except ImportError:
     # Manual fallback for .env loading if python-dotenv isn't installed
     if env_path.exists():

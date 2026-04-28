@@ -1,0 +1,12 @@
+[project]
+name = "gcp-mle-quiz"
+version = "0.1.0"
+description = "GCP Quiz CLI"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-genai>=1.73.1",
+    "openai>=2.32.0",
+    "pdfplumber>=0.11.9",
+    "python-dotenv>=1.2.2",
+]
